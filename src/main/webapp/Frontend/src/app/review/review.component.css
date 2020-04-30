@@ -1,0 +1,9 @@
+.center {
+    text-align: center;
+    border: 3px solid green;
+  }
+
+  #movieposter {
+    text-align: right;
+    color: red;
+  }
