@@ -1,0 +1,15 @@
+.center {
+    text-align: center;
+    border: 3px solid green;
+  }
+
+  .userinfo {
+    width: 20%;
+    text-align: left;
+    border: 3px solid green;
+  }
+
+  #movieposter {
+    text-align: right;
+    color: red;
+  }
