@@ -5,28 +5,31 @@
       <td id ='poster' colspan="3">image</td>
     </tr>
     <tr id="top">
-        <td id ='movietitle' colspan="3">Movie Title</td>
+        <td id ='movietitle' colspan="3">{{Title}}</td>
       </tr>
     <tr>
-      <td id= 'director'>director</td>
-      <td id='genre'>genre</td>
-      <td id='year'>year released</td>
+      <td id= 'director'>Director: {{Director}}</td>
+      <td id='genre'>Genre: {{Genre}}</td>
+      <td id='year'>Year Released: {{Year}}</td>
     </tr>
   </table>
 
   <div id="score">
       <section>
       <span> Critiques Score</span>
-      <span id="critique"> 0/100</span>
+      <span id="critique"> {{Cscore}}/100</span>
     </section>
 <section>
       <span> Audience Score</span>
-      <span id="audience"> 0/100</span>
+      <span id="audience"> {{Ascore}}/100</span>
     </section>
   </div>
+  <br>
+  <span>
   <nav>
     <a class="nav-link" routerLink="createreview">NewReview</a>
 </nav>
+</span>
   <div class = "reviews">
     <h1 id="information">Reviews</h1>
     <table>

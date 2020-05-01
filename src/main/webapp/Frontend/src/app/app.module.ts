@@ -12,6 +12,7 @@ import { SearchMoviesComponent } from './search-movies/search-movies.component';
 import { MovieComponent } from './movie/movie.component';
 import { ReviewComponent } from './review/review.component';
 import { CreateReviewComponent } from './create-review/create-review.component';
+import { UpdatepasswordComponent } from './updatepassword/updatepassword.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { CreateReviewComponent } from './create-review/create-review.component';
     MovieComponent,
     ReviewComponent,
     CreateReviewComponent,
+    UpdatepasswordComponent,
   ],
   imports: [
     BrowserModule,

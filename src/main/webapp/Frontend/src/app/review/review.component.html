@@ -1,20 +1,23 @@
 <h1 class = "center"> Movie Review </h1>
-<h2 class = "center"id='movietitle'>title</h2>
+<h2 class = "center"id='movietitle'>{{MovieTitle}}</h2>
 <div id='movieposter'>here the image goes</div>
 
 <div>
 <div class = "userinfo">
-    <a id="username">User link goes here</a>
+    <a id="username">{{Username}}</a>
     
-    <div id="status">if the user is a critic it will be marked here!</div>
-    <span class="center">
-        <span id='rating'> score</span>
-    </span>
+    <div id="status">{{Status}}</div> <br>
+    <div class="center">
+        <span class='rating'> {{Score}}/10</span>
+    </div>
 </div>
-<div class = "center">   
+<div class = "review">   
     <span id='review' class = "center">
-        this is where the review info will go
+        {{Review}}
     </span>
-    <div class = "center" id="feedback"> Did you find this review: Helpful? Funny? Terrible?</div>
+    <div class = "center" id="feedback"> Did you find this review: </div>
+    <button id="helpful"> Helpful</button>
+    <button id="funny"> Funny </button>
+    <button id="terrible"> Terrible </button>
 </div>
 <!-- this is where the review info will be inputted -->

@@ -1,6 +1,6 @@
 <h1 id="movie name">This is where the name of the movie will be placed</h1>
 
-<form  #myForm="ngForm" (submit)="templateForm(myForm.value)" (submit)="templateForm(myForm.value)" id="newreview">
+<form  #myForm="ngForm" (submit)="templateForm(myForm.value)"  id="newreview">
 	
 	<div id = "message"> </div>
 	<div id = "menu" class ="form-group">
@@ -31,8 +31,10 @@
             <div> {{Score}}</div>
         </div>
     <div>What did you think of the movie:</div> 
-    <input type="text" id="review"  class="form-control" name="review" maxlength="1500" style="height:600px; width:800px;" required />
-   <div>
+    <textarea form="newreview" autocomplete="off" class="form-control" name="review" maxlength="1500" style="height:600px; width:800px;" required></textarea>
+   
+   <br><br>
+    <div>
     <input type="submit" value="Submit">
     </div>
 		</div>
