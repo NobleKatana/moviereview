@@ -12,6 +12,7 @@ import { UpdatepasswordComponent } from './updatepassword/updatepassword.compone
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: 'redirect-Nreview', redirectTo: 'createreview', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'login', component: LoginComponent,  pathMatch: 'full' },
   { path: 'searchmovies', component: SearchMoviesComponent, pathMatch: 'full' },
