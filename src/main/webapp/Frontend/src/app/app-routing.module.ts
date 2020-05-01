@@ -7,6 +7,7 @@ import { UserAccountComponent } from './account-user/user-account.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {MovieComponent} from './movie/movie.component';
 import { ReviewComponent } from './review/review.component';
+import { CreateReviewComponent } from './create-review/create-review.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'account-user', component: UserAccountComponent, pathMatch: 'full' },
   { path: 'review', component: ReviewComponent, pathMatch: 'full' },
   { path: 'createaccount', component: CreateaccountComponent, pathMatch: 'full' },
-  { path: 'movie', component: MovieComponent, pathMatch: 'full' }
+  { path: 'movie', component: MovieComponent, pathMatch: 'full' },
+  { path: 'createreview', component: CreateReviewComponent, pathMatch: 'full' }
 
  // { path: 'login', redirectTo: '/Login', pathMatch: 'full' }
 ];

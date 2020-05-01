@@ -1,0 +1,41 @@
+<h1 id="movie name">This is where the name of the movie will be placed</h1>
+
+<form  #myForm="ngForm" (submit)="templateForm(myForm.value)" (submit)="templateForm(myForm.value)" id="newreview">
+	
+	<div id = "message"> </div>
+	<div id = "menu" class ="form-group">
+        <div>
+            <label for="Score">How does the movie rate?:</label> <br>
+            <label for="score0">0</label>
+            <input type="radio" (click)="setScore(0)" id="score0" name="score" value="0" ngModel>
+            <label for="score1">1</label>
+            <input type="radio" (click)="setScore(1)"id="score1" name="score" value="1" ngModel>
+            <label for="score2">2</label>
+            <input type="radio" (click)="setScore(2)" id="score2" name="score" value="2" ngModel>
+            <label for="score3">3</label>
+            <input type="radio" (click)="setScore(3)" id="score3" name="score" value="3" ngModel>
+            <label for="score4">4</label>
+            <input type="radio" (click)="setScore(4)" id="score4" name="score" value="4" ngModel>
+            <label for="score5">5</label>
+            <input type="radio" (click)="setScore(5)" id="score5" name="score" value="5" ngModel>
+            <label for="score6">6</label>
+            <input type="radio" (click)="setScore(6)" id="score6" name="score" value="6" ngModel>
+            <label for="score7">7</label>
+            <input type="radio" (click)="setScore(7)" id="score7" name="score" value="7" ngModel>
+            <label for="score3">8</label>
+            <input type="radio" (click)="setScore(8)" id="score8" name="score" value="8" ngModel>
+            <label for="score9">9</label>
+            <input type="radio" (click)="setScore(9)" id="score9" name="score" value="9" ngModel>
+            <label for="score10">10</label>
+            <input type="radio" (click)="setScore(10)" id="score10" name="score" value="10" ngModel>
+            <div> {{Score}}</div>
+        </div>
+    <div>What did you think of the movie:</div> 
+    <input type="text" id="review"  class="form-control" name="review" maxlength="1500" style="height:600px; width:800px;" required />
+   <div>
+    <input type="submit" value="Submit">
+    </div>
+		</div>
+		</form>
+        
+       

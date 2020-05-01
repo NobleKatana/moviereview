@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-account.component.css']
 })
 export class UserAccountComponent implements OnInit {
-
-  constructor() { }
+  Username:string = "none";
+  Status:string = "normal";
+  Birthday: Date = new Date(2013, 9, 22);
+  Gender: string = "Male";
+  Country: string = "USA";
 
   ngOnInit() {
   }
