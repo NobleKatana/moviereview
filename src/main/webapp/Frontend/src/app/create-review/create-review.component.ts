@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CreateReviewComponent implements OnInit {
   Review = "none";
   Score = 0;
-
+  dateCreated: Date;
   getReview() {
     return this.Review;
   }

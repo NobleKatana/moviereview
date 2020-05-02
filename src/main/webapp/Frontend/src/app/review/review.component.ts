@@ -11,7 +11,7 @@ export class ReviewComponent implements OnInit {
   Status:string = "normal";
   Score: number = 7;
   Review: String = "I WATCHED THIS MOVIE AND IT WAS Awesome";
-  
+  dateCreated: Date = new Date(2014, 4, 4);
   
   constructor() { }
 
