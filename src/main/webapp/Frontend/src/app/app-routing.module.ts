@@ -12,7 +12,6 @@ import { UpdatepasswordComponent } from './updatepassword/updatepassword.compone
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: 'redirect-Nreview', redirectTo: 'createreview', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'login', component: LoginComponent,  pathMatch: 'full' },
   { path: 'searchmovies', component: SearchMoviesComponent, pathMatch: 'full' },
@@ -21,8 +20,9 @@ const routes: Routes = [
   { path: 'review', component: ReviewComponent, pathMatch: 'full' },
   { path: 'createaccount', component: CreateaccountComponent, pathMatch: 'full' },
   { path: 'movie', component: MovieComponent, pathMatch: 'full' },
-  { path: 'createreview', component: CreateReviewComponent, pathMatch: 'full' },
+  { path: 'createreview/:id', component: CreateReviewComponent, pathMatch: 'full' },
   { path: 'updatepassword', component: UpdatepasswordComponent, pathMatch: 'full' }
+  
 
  // { path: 'login', redirectTo: '/Login', pathMatch: 'full' }
 ];

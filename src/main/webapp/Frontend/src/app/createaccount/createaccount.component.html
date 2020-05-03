@@ -6,14 +6,15 @@
     </div>
     <br>
     <div>
-    <label for="birthday">Date of Birth:     </label>
+    <label for="birthday">Date of Birth:   {{Birthday}}  </label>
     <input type="date" id="birthday" name="birthday" required>
+    
     <p>Please select your gender: </p>
-                <input type="radio" id="male" name="gender" value="male">
+                <input type="radio" id="male" name="gender" (click)="setMale()" value="male">
                 <label for="male">Male</label><br>
-                <input type="radio" id="female" name="gender" value="female">
+                <input type="radio" id="female" name="gender"(click)="setFemale()" value="female">
                 <label for="female">Female</label><br>
-                <input type="radio" id="other" name="gender" value="other">
+                <input type="radio" id="other" name="gender" (click)="setOther()" value="other">
                 <label for="other">Other</label>
             </div>
             <br>
